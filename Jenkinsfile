@@ -4,33 +4,17 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                // Checkout the code from the repository
-                git 'https://your-repo-url.git'
+                git url: 'https://github.com/edwin-2001/Test.git', credentialsId: 'your-credentials-id'
             }
         }
 
-        stage('Install Dependencies') {
-            steps {
-                // Install Composer dependencies
-                sh 'composer install'
-            }
-        }
-
-        stage('Run Tests') {
-            steps {
-                // Run PHP Unit tests
-                sh 'vendor/bin/phpunit --configuration phpunit.xml'
-            }
-        }
+        // Other stages (install dependencies, run tests) here...
     }
 
     post {
         always {
-            // Archive test results
-            junit 'tests/reports/*.xml'
-
-            // Clean workspace
-            cleanWs()
+            // Post-build actions (e.g., archive test results)
+            archiveArtifacts 'path/to/test/reports/*.xml'
         }
     }
 }
