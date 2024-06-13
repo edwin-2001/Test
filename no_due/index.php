@@ -62,7 +62,7 @@ return true;
        
         </tr>
         <tr>
-          <th width="167" align="left" scope="row">Reg No.</th>
+          <th width="167" align="left" scope="row">Reg No.(ex:19ucs603)</th>
           <td width="190" align="left"><input type="text" name="uname" /></td>
         </tr>
         <tr>
