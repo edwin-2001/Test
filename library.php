@@ -28,7 +28,7 @@ header("location:library.php");
   <div class="hd" align="center"><?php include("title.php"); ?></div>
   <?php include("link_lib.php"); ?>
   <p>&nbsp;</p>
-  <h2 align="center">Welcome to Library Manager </h2>
+  <h2 align="center">Welcome to Library Manager edwin</h2>
   <table width="399" height="160" border="0" align="center" cellpadding="5">
     <tr>
       <td>Library Fees </td>
