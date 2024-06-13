@@ -56,7 +56,7 @@ return true;
       <th scope="row"><img src="images/imagesxzx.jpg" width="275" height="183" /></th>
       <td><table width="352" height="176" border="0" align="center" cellpadding="5" class="bor">
         <tr>
-          <th colspan="2" scope="row">STUDENT</th>
+          <th colspan="2" scope="row">STUDENT </th>
         </tr>
         <tr>
        
